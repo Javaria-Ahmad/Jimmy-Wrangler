@@ -1,0 +1,25 @@
+Javaria Ahmad - HW1 Jimmy Wrangler
+
+Data Sets:
+
+Two data sets were obtained from Data.gov called MedicarePayments.csv and MedicareRegisteredHospital.csv. 
+The first data set contains information about hospitals and their Medicare transactions. 
+The assumption is that these hospitals do not have to be Medicare registered even if they made payments.
+
+The second data set has all the records which are registered Medicare hospitals. Overall hospital rating is included in this data set as well.
+
+Goal:
+
+The goal was to find the states with high number of hospitals with good healthcare standards (Medicare registered, high hospital rating, high Medicare payments).
+
+Approach:
+
+The two data sets were loaded into Panda data frames. Then these were combined on Provider ID field.
+New features were created to mark the hospitals that were registered and that had high average Medicare payments.
+Such hospitals were counted to identify the states containing the number of such hospitals. That helped in recognizing states with high healthcare.
+
+Results:
+
+From the counts and bar chart, it was concluded that California has the highest number of Medicare registered hospitals that has 
+high overall ratings and high average Medicare payments. This state was concluded to be the highest in healthcare standard.
+The lowest state was Wyoming. 
